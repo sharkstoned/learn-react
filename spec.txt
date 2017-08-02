@@ -1,0 +1,8 @@
+set up local server
+dynamic contacts load with ajax
+investigate json5 usage
+set up nginx
+set up mysql database with contacts
+nodejs screencast Kantor
+
+what is publicPath?

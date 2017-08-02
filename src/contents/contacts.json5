@@ -1,0 +1,26 @@
+[
+  {
+    firstName: 'John',
+    lastName: ' Malkovich',
+    number: '+123456789',
+    imageSrc: ''
+  },
+  {
+    firstName: 'Eddie',
+    lastName: ' Vedder',
+    number: '+987654321',
+    imageSrc: ''
+  },
+  {
+    firstName: 'Mike',
+    lastName: ' Portnoy',
+    number: '+147258369',
+    imageSrc: ''
+  },
+  {
+    firstName: 'Eugene',
+    lastName: ' Petrosyan',
+    number: '+963258741',
+    imageSrc: ''
+  }
+]

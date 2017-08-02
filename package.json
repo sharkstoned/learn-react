@@ -17,6 +17,8 @@
     "babel-preset-react": "^6.24.1"
   },
   "devDependencies": {
+    "copy-webpack-plugin": "^4.0.1",
+    "json5": "^0.5.1",
     "webpack": "^3.4.1"
   }
 }
