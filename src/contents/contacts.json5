@@ -18,8 +18,8 @@
     imageSrc: ''
   },
   {
-    firstName: 'Eugene',
-    lastName: ' Petrosyan',
+    firstName: 'Jane',
+    lastName: 'Doe',
     number: '+963258741',
     imageSrc: ''
   }

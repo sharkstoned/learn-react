@@ -1,13 +1,9 @@
-var webpack = require('webpack');
-var CopyWebpackPlugin = require('copy-webpack-plugin');
-var path = require('path');
+const webpack = require('webpack');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+const path = require('path');
 
-var APP_DIR = path.resolve(__dirname, 'src/client/app/');
-var BUILD_DIR = path.resolve(__dirname, 'src/client/build/');
-
-// var config = {
-//
-// };
+const APP_DIR = path.resolve(__dirname, 'src/client/app/');
+const BUILD_DIR = path.resolve(__dirname, 'build/');
 
 module.exports = {
     entry: APP_DIR + '/index.jsx',
@@ -34,8 +30,11 @@ module.exports = {
                         presets: ['es2015', 'react']
                     }
                 }
-
             }
         ]
+    },
+    devServer: {
+        compress: true,
+        port: 9000
     }
 };

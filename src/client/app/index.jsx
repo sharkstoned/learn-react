@@ -5,7 +5,7 @@ import {render} from 'react-dom';
 
 class App extends React.Component {
     render () {
-        return <p>jopa!</p>;
+        return <p>asdf</p>;
     }
 }
 
