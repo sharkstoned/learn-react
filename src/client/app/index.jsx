@@ -1,12 +1,42 @@
 'use strict';
 
 import React from 'react';
-import {render} from 'react-dom';
+import ReactDom from 'react-dom';
 
-class App extends React.Component {
-    render () {
-        return <p>asdf</p>;
-    }
+class Clock extends React.Component {
+  constructor (props) {
+    super(props);
+    this.state = {date: new Date()};
+  }
+
+  componentDidMount () {
+    this.timerID = setInterval(
+      () => this.tick(),
+      1000
+    )
+  }
+
+  componentWillUnmount () {
+    clearInterval(this.timerID);
+  }
+
+  tick () {
+    this.setState({
+      date: new Date()
+    })
+  }
+
+  render() {
+    return (
+      <div>
+        <h1>Hello, world!</h1>
+        <h2>It is {this.state.date.toLocaleTimeString()}.</h2>
+      </div>
+    )
+  }
 }
 
-render(<App/>, document.querySelector('#content'));
+ReactDom.render(
+  <Clock />,
+  document.getElementById('root')
+);
